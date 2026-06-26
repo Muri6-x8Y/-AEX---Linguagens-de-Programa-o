@@ -1,4 +1,4 @@
-# -AEX---Linguagens-de-Programa
+# -AEX---Linguagens-de-Programação
 # 🚀 Missão dos Foguetes
 
 ## Sobre o projeto
