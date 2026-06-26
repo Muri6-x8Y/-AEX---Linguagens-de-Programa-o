@@ -10,7 +10,7 @@ O jogo é composto por **5 fases**, nas quais o jogador deve abastecer um foguet
 Nas primeiras fases, os galões apresentam valores inteiros, como **1, 2, 3 e 4 litros**. Já nas fases mais avançadas, o desafio aumenta: em vez de mostrar apenas um número, alguns galões apresentam operações matemáticas, como **1+1**, **2+1** ou **3+2**. Assim, a criança precisa resolver a soma antes de decidir qual galão utilizar, estimulando o cálculo mental e o pensamento lógico.
 
 O objetivo é tornar a aprendizagem mais envolvente, permitindo que a criança aprenda enquanto joga e supera novos desafios.
-![Descrição da imagem] ([https://i.imgur.com/J4Axsmd.png])
+![Descrição da imagem](https://i.imgur.com/NaMeda6.png)
 
 ## Fundamentação
 
