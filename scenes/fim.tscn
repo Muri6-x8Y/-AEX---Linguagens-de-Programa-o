@@ -1,0 +1,59 @@
+[gd_scene load_steps=10 format=3 uid="uid://ivgb36ol8e66"]
+
+[ext_resource type="Script" uid="uid://4jw0agcm43jm" path="res://scripts/fim.gd" id="1_rfd8f"]
+[ext_resource type="Texture2D" uid="uid://8po2nq86txnq" path="res://assets/Fim.png" id="2_anpyl"]
+[ext_resource type="Texture2D" uid="uid://cr8qlghnwci5q" path="res://assets/Voltar.png" id="3_66g14"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wrqqw"]
+texture = ExtResource("3_66g14")
+region_rect = Rect2(29, 69, 608, 221)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cwp4m"]
+texture = ExtResource("3_66g14")
+region_rect = Rect2(29, 69, 608, 221)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6qkjj"]
+texture = ExtResource("3_66g14")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(29, 69, 608, 221)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tykr8"]
+texture = ExtResource("3_66g14")
+region_rect = Rect2(29, 69, 608, 221)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x14ae"]
+texture = ExtResource("3_66g14")
+region_rect = Rect2(29, 69, 608, 221)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mta81"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rfd8f")
+metadata/_edit_vertical_guides_ = [-528.0, 793.0]
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_anpyl")
+expand_mode = 1
+
+[node name="ReturnButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 418.0
+offset_right = 1043.0
+offset_bottom = 608.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_wrqqw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cwp4m")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6qkjj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_tykr8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_x14ae")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mta81")

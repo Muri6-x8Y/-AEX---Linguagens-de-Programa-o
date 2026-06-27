@@ -1,0 +1,246 @@
+[gd_scene load_steps=11 format=3 uid="uid://dl4bqkksqvijf"]
+
+[ext_resource type="Script" uid="uid://cf10ulucewa3n" path="res://scripts/game.gd" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://b7m86lumod3nq" path="res://assets/Background.png" id="2_yqjtg"]
+[ext_resource type="FontFile" uid="uid://ddnf7kx5h5kok" path="res://assets/Super Beatpop.ttf" id="3_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://bvw1qluq2ouu4" path="res://assets/Buttons.png" id="3_lnu2h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lnu2h"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+texture = ExtResource("3_lnu2h")
+region_rect = Rect2(68, 47, 361, 400)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lbhrr"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+texture = ExtResource("3_lnu2h")
+region_rect = Rect2(68, 47, 361, 400)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iywne"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+texture = ExtResource("3_lnu2h")
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+region_rect = Rect2(68, 47, 361, 400)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p57ef"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+texture = ExtResource("3_lnu2h")
+region_rect = Rect2(68, 47, 361, 400)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u5sy4"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+texture = ExtResource("3_lnu2h")
+region_rect = Rect2(68, 47, 361, 400)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u5sy4"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uwrxv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_yqjtg")
+expand_mode = 1
+
+[node name="FeedbackLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 916.0
+offset_top = 567.0
+offset_right = 1232.0
+offset_bottom = 683.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 40
+text = "Observe quanto
+ falta no tanque."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 137.0
+offset_right = 938.0
+offset_bottom = 283.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 40
+text = "O tanque precisa chegar a 10.  
+já temos 5. Qual galão completa 
+o tanque?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TankContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 400.0
+offset_right = 1035.0
+offset_bottom = 481.0
+theme_override_constants/separation = 8
+
+[node name="Slot1" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot2" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot3" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot4" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot5" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot6" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot7" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot8" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot9" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="Slot10" type="ColorRect" parent="TankContainer"]
+custom_minimum_size = Vector2(50, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364263, 0.9167516, 3.85046e-07, 1)
+
+[node name="OptionsContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 560.0
+offset_right = 838.0
+offset_bottom = 704.0
+theme_override_constants/separation = 30
+
+[node name="Option1" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_max_width = 190
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_lnu2h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lbhrr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_iywne")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_p57ef")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_u5sy4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u5sy4")
+text = "2"
+icon_alignment = 1
+expand_icon = true
+
+[node name="Option2" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_max_width = 190
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_lnu2h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lbhrr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_iywne")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_p57ef")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_u5sy4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u5sy4")
+text = "2"
+icon_alignment = 1
+expand_icon = true
+
+[node name="Option3" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/icon_max_width = 190
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_lnu2h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lbhrr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_iywne")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_p57ef")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_u5sy4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u5sy4")
+text = "2"
+icon_alignment = 1
+expand_icon = true
+
+[node name="PhaseLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 26.0
+offset_right = 838.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_lbhrr")
+theme_override_font_sizes/font_size = 55
+text = "Fase 1 de 5"
+horizontal_alignment = 1
+vertical_alignment = 1
